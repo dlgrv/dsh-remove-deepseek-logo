@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/remove-deepseek-logo)](https://www.npmjs.com/package/remove-deepseek-logo) [![test](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml)
 
+![before and after](docs/preview.png)
+
 A DeepSeek Harness (DSH) plugin that removes the logo, brand name, version string,
 and the conversation hero fish from the sidebar. The logo row collapses completely,
 so the sidebar starts at the New Session button.
