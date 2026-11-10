@@ -5,6 +5,8 @@ kind: "package-bundle"
 
 # remove-deepseek-logo
 
+[![npm](https://img.shields.io/npm/v/remove-deepseek-logo)](https://www.npmjs.com/package/remove-deepseek-logo) [![GitHub Actions](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml)
+
 A tiny DeepSeek Harness (DSH) plugin that makes the sidebar yours: no whale mark,
 no brand wordmark, no version string — and no animated
 fish in an empty conversation. The logo row collapses completely, so the sidebar
@@ -26,7 +28,7 @@ sessions, or tools.
 
 ## Install
 
-From npm (**recommended**):
+From [npm](https://www.npmjs.com/package/remove-deepseek-logo) (**recommended**):
 
 ```sh
 npm i remove-deepseek-logo

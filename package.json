@@ -1,7 +1,7 @@
 {
   "name": "remove-deepseek-logo",
   "version": "1.0.0",
-  "description": "DeepSeek Harness plugin: removes the logo, brand name, local-build label, version, and the conversation hero fish from the sidebar",
+  "description": "DeepSeek Harness plugin: removes the logo, brand name, version string, and the conversation hero fish from the sidebar",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
@@ -48,5 +48,9 @@
   ],
   "scripts": {
     "test": "node --test"
+  },
+  "homepage": "https://github.com/dlgrv/remove-deepseek-logo#readme",
+  "bugs": {
+    "url": "https://github.com/dlgrv/remove-deepseek-logo/issues"
   }
 }
