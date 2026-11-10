@@ -1,6 +1,6 @@
 {
   "name": "remove-deepseek-logo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DeepSeek Harness plugin: removes the logo, brand name, version string, and the conversation hero fish from the sidebar",
   "license": "MIT",
   "type": "module",
@@ -12,7 +12,9 @@
     "plugin",
     "branding",
     "logo",
-    "sidebar"
+    "sidebar",
+    "hide-logo",
+    "customization"
   ],
   "repository": {
     "type": "git",
