@@ -10,8 +10,6 @@ no brand wordmark, no version string — and no animated
 fish in an empty conversation. The logo row collapses completely, so the sidebar
 starts right at the toggle and the New Session button.
 
-English | [Русский](#readme-russian)
-
 ## How it works
 
 - Registers empty occupants into the `sidebar.brand.mark` and `sidebar.brand.name`
