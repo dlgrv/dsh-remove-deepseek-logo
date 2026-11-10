@@ -1,53 +1,50 @@
----
-description: "Remove the DeepSeek logo, version string, and the conversation hero fish from the DSH sidebar."
-kind: "package-bundle"
----
-
 # remove-deepseek-logo
 
-[![npm](https://img.shields.io/npm/v/remove-deepseek-logo)](https://www.npmjs.com/package/remove-deepseek-logo) [![GitHub Actions](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml)
+[![npm](https://img.shields.io/npm/v/remove-deepseek-logo)](https://www.npmjs.com/package/remove-deepseek-logo) [![test](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml)
 
-A tiny DeepSeek Harness (DSH) plugin that makes the sidebar yours: no whale mark,
-no brand wordmark, no version string — and no animated
-fish in an empty conversation. The logo row collapses completely, so the sidebar
-starts right at the toggle and the New Session button.
-
-## How it works
-
-- Registers empty occupants into the `sidebar.brand.mark` and `sidebar.brand.name`
-  slots (the same mechanism the official brand package uses), so both the official
-  branding and the local-build fallback disappear.
-- Registers an empty occupant into the `conversation.hero.brand.mark` slot, which
-  replaces the animated hero fish.
-- Adds a small safety-net stylesheet that hides the the version
-  string, any fish fallback, and collapses the now-empty logo row. Attribute
-  selectors survive CSS-hash changes between app versions.
-
-No host-side behavior is touched; the plugin changes nothing about model requests,
-sessions, or tools.
+A DeepSeek Harness (DSH) plugin that removes the logo, brand name, version string,
+and the conversation hero fish from the sidebar. The logo row collapses completely,
+so the sidebar starts at the New Session button.
 
 ## Install
-
-From [npm](https://www.npmjs.com/package/remove-deepseek-logo) (**recommended**):
 
 ```sh
 npm i remove-deepseek-logo
 ```
 
-or in DSH **Settings → Plugins → Add plugin**, enter `remove-deepseek-logo`
-(npm name) or:
+or in DSH: **Settings → Plugins → Add plugin** → `remove-deepseek-logo`
 
-```
-github:dlgrv/remove-deepseek-logo
-```
+or from source: `github:dlgrv/remove-deepseek-logo`
 
-then add `remove-deepseek-logo` to `dsh.profile.bundles` in your profile's
-`package.json`. Restart the application to apply.
+Then add `remove-deepseek-logo` to `dsh.profile.bundles` in your profile's
+`package.json` and restart DSH.
+
+## How it works
+
+- Registers empty occupants into the `sidebar.brand.mark`, `sidebar.brand.name`,
+  and `conversation.hero.brand.mark` slots, replacing the official branding,
+  the local-build fallback, and the animated hero fish.
+- Adds a safety-net stylesheet that hides the version string, any fish fallback,
+  and collapses the logo row. Attribute selectors survive CSS-hash changes
+  between DSH versions.
+
+The plugin changes nothing on the host side: no model requests, sessions, or
+tools are affected.
+
+## Compatibility
+
+DSH 0.2.x (tested on 0.2.2-rc.1).
+
+## Development
+
+```sh
+npm test
+```
 
 ## Uninstall
 
-Remove the bundle from your profile (toggle it off on the Plugins page) and
-uninstall the package. The original branding returns after a restart.
+Toggle the bundle off on the Plugins page and remove the package. The original
+branding returns after a restart.
 
 ## License
 
