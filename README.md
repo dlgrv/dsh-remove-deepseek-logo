@@ -28,14 +28,21 @@ sessions, or tools.
 
 ## Install
 
-In DSH **Settings → Plugins → Add plugin**, enter:
+From npm (**recommended**):
+
+```sh
+npm i remove-deepseek-logo
+```
+
+or in DSH **Settings → Plugins → Add plugin**, enter `remove-deepseek-logo`
+(npm name) or:
 
 ```
 github:dlgrv/remove-deepseek-logo
 ```
 
-or add `remove-deepseek-logo` to `dsh.profile.bundles` in your profile's
-`package.json` (when installed from npm). Restart the application to apply.
+then add `remove-deepseek-logo` to `dsh.profile.bundles` in your profile's
+`package.json`. Restart the application to apply.
 
 ## Uninstall
 
