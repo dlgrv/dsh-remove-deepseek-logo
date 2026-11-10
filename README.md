@@ -23,7 +23,7 @@ Then add `remove-deepseek-logo` to `dsh.profile.bundles` in your profile's
 
 - Registers empty occupants into the `sidebar.brand.mark`, `sidebar.brand.name`,
   and `conversation.hero.brand.mark` slots, replacing the official branding,
-  the local-build fallback, and the animated hero fish.
+  its fallback, and the animated hero fish.
 - Adds a safety-net stylesheet that hides the version string, any fish fallback,
   and collapses the logo row. Attribute selectors survive CSS-hash changes
   between DSH versions.
