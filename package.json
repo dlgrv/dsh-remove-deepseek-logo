@@ -38,5 +38,15 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "files": [
+    "lib",
+    "client",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
   }
 }
