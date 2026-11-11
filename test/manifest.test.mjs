@@ -29,12 +29,12 @@ test("every shipped file exists", () => {
 
 test("the bundle patch inserts exactly this package", () => {
   const patch = readFileSync(join(root, "cordis.patch.yml"), "utf8");
-  assert.match(patch, /id:\s*remove-deepseek-logo/);
-  assert.match(patch, /name:\s*'?remove-deepseek-logo'?/);
+  assert.match(patch, /id:\s*dsh-remove-deepseek-logo/);
+  assert.match(patch, /name:\s*'?dsh-remove-deepseek-logo'?/);
 });
 
 test("the client bundle carries the loader signature", () => {
   const client = readFileSync(join(root, "client/client.js"), "utf8");
   assert.ok(client.includes("window.__ModuleLoader__.load"), "must register via __ModuleLoader__");
-  assert.ok(client.includes('"remove-deepseek-logo"'), "must use its own id");
+  assert.ok(client.includes('"dsh-remove-deepseek-logo"'), "must use its own id");
 });

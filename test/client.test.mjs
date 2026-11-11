@@ -34,8 +34,8 @@ function loadClient() {
 
 test("bundle registers under the package name", () => {
   const c = loadClient();
-  assert.equal(c.id, "remove-deepseek-logo");
-  assert.equal(c.plugin.name, "remove-deepseek-logo");
+  assert.equal(c.id, "dsh-remove-deepseek-logo");
+  assert.equal(c.plugin.name, "dsh-remove-deepseek-logo");
   assert.equal(typeof c.plugin.apply, "function");
   assert.deepEqual(c.plugin.inject, ["slots"]);
 });

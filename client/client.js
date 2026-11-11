@@ -1,4 +1,4 @@
-window.__ModuleLoader__.load({ id: "remove-deepseek-logo", factory: (require) => {
+window.__ModuleLoader__.load({ id: "dsh-remove-deepseek-logo", factory: (require) => {
   var module = { exports: {} }; var exports = module.exports;
   Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
@@ -29,6 +29,6 @@ window.__ModuleLoader__.load({ id: "remove-deepseek-logo", factory: (require) =>
 
   exports.apply = apply;
   exports.inject = inject;
-  exports.name = "remove-deepseek-logo";
+  exports.name = "dsh-remove-deepseek-logo";
   return module.exports;
 } });

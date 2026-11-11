@@ -1,5 +1,5 @@
 {
-  "name": "remove-deepseek-logo",
+  "name": "dsh-remove-deepseek-logo",
   "version": "1.0.2",
   "description": "DeepSeek Harness plugin: removes the logo, brand name, version string, and the conversation hero fish from the sidebar",
   "license": "MIT",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dlgrv/remove-deepseek-logo.git"
+    "url": "git+https://github.com/dlgrv/dsh-remove-deepseek-logo.git"
   },
   "exports": {
     ".": "./lib/index.js",
@@ -52,8 +52,8 @@
   "scripts": {
     "test": "node --test"
   },
-  "homepage": "https://github.com/dlgrv/remove-deepseek-logo#readme",
+  "homepage": "https://github.com/dlgrv/dsh-remove-deepseek-logo#readme",
   "bugs": {
-    "url": "https://github.com/dlgrv/remove-deepseek-logo/issues"
+    "url": "https://github.com/dlgrv/dsh-remove-deepseek-logo/issues"
   }
 }

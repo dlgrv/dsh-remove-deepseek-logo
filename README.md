@@ -1,6 +1,6 @@
-# remove-deepseek-logo
+# dsh-dsh-remove-deepseek-logo
 
-[![npm](https://img.shields.io/npm/v/remove-deepseek-logo)](https://www.npmjs.com/package/remove-deepseek-logo) [![test](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/remove-deepseek-logo/actions/workflows/test.yml)
+[![npm](https://img.shields.io/npm/v/dsh-remove-deepseek-logo)](https://www.npmjs.com/package/dsh-remove-deepseek-logo) [![test](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml)
 
 ![before and after](docs/preview.png)
 
@@ -11,14 +11,14 @@ so the sidebar starts at the New Session button.
 ## Install
 
 ```sh
-npm i remove-deepseek-logo
+npm i dsh-remove-deepseek-logo
 ```
 
-or in DSH: **Settings → Plugins → Add plugin** → `remove-deepseek-logo`
+or in DSH: **Settings → Plugins → Add plugin** → `dsh-remove-deepseek-logo`
 
-or from source: `github:dlgrv/remove-deepseek-logo`
+or from source: `github:dlgrv/dsh-remove-deepseek-logo`
 
-Then add `remove-deepseek-logo` to `dsh.profile.bundles` in your profile's
+Then add `dsh-remove-deepseek-logo` to `dsh.profile.bundles` in your profile's
 `package.json` and restart DSH.
 
 ## How it works

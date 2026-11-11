@@ -1,3 +1,3 @@
 - insert:
-    - id: remove-deepseek-logo
-      name: 'remove-deepseek-logo'
+    - id: dsh-remove-deepseek-logo
+      name: 'dsh-remove-deepseek-logo'
