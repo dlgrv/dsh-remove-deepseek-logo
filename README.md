@@ -1,4 +1,4 @@
-# dsh-dsh-remove-deepseek-logo
+# dsh-remove-deepseek-logo
 
 [![npm](https://img.shields.io/npm/v/dsh-remove-deepseek-logo)](https://www.npmjs.com/package/dsh-remove-deepseek-logo) [![test](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml)
 

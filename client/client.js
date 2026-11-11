@@ -8,15 +8,15 @@ window.__ModuleLoader__.load({ id: "dsh-remove-deepseek-logo", factory: (require
 
   function apply(ctx) {
     ctx.slots.inject("sidebar.brand.mark", () => ctx.slots.inject("sidebar.brand.name", function* () {
-      yield ctx.slots.register({ name: "sidebar.brand.mark", id: "remove-deepseek-logo-mark", order: 9999 }, Ghost);
-      yield ctx.slots.register({ name: "sidebar.brand.name", id: "remove-deepseek-logo-name", order: 9999 }, Ghost);
+      yield ctx.slots.register({ name: "sidebar.brand.mark", id: "dsh-remove-deepseek-logo-mark", order: 9999 }, Ghost);
+      yield ctx.slots.register({ name: "sidebar.brand.name", id: "dsh-remove-deepseek-logo-name", order: 9999 }, Ghost);
     }));
 
     ctx.slots.inject("conversation.hero.brand.mark", () =>
-      ctx.slots.register({ name: "conversation.hero.brand.mark", id: "remove-deepseek-logo-hero", order: 9999 }, Ghost));
+      ctx.slots.register({ name: "conversation.hero.brand.mark", id: "dsh-remove-deepseek-logo-hero", order: 9999 }, Ghost));
 
     var style = document.createElement("style");
-    style.setAttribute("data-remove-deepseek-logo", "");
+    style.setAttribute("data-dsh-remove-deepseek-logo", "");
     style.textContent = [
       '[class*="localBuildBrand"], [class*="localBuildTitle"], [class*="copyVersion"],',
       '[class*="buildVersion"], [class*="fallbackBrandName"] { display: none !important; }',
