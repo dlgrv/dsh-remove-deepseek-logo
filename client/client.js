@@ -12,6 +12,7 @@ window.__ModuleLoader__.load({ id: 'dsh-remove-deepseek-logo', factory: (require
       '[class*="localBuildBrand"], [class*="localBuildTitle"], [class*="copyVersion"],',
       '[class*="buildVersion"], [class*="fallbackBrandName"] { display: none !important; }',
       '[class$="_fish"], [class$="fishHitbox"] { display: none !important; }',
+      '[class$="_headline"], [class$="_previewBadge"] { display: none !important; }',
       '[class*="logoRow"] { height: 0 !important; min-height: 0 !important; max-height: 0 !important;',
       '  padding: 0 !important; margin: 0 !important; overflow: hidden !important; border: 0 !important; }',
     ].join('\n')

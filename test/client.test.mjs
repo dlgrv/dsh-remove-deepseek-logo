@@ -47,7 +47,7 @@ test('apply injects stylesheet with all hiding rules', () => {
   const css = c.styles.map((s) => s.textContent).join('\n')
   for (const needle of [
     'localBuildBrand', 'localBuildTitle', 'copyVersion', 'buildVersion',
-    'fallbackBrandName', '_fish', 'fishHitbox', 'logoRow',
+    'fallbackBrandName', '_fish', 'fishHitbox', 'logoRow', '_headline', '_previewBadge',
   ]) {
     assert.ok(css.includes(needle), 'css must hide ' + needle)
   }
