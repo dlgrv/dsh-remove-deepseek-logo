@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const source = readFileSync(join(root, 'client/client.js'), 'utf8')
+const DIAGNOSTIC_DELAY_MS = 3000
 
 function loadClient(opts = {}) {
   const styles = []
@@ -85,7 +86,7 @@ test('diagnostics fires once and warns when no branding elements are found', () 
     const c = loadClient()
     c.plugin.apply({})
     assert.equal(c.timers.length, 1)
-    assert.equal(c.timers[0].ms, 3000)
+    assert.equal(c.timers[0].ms, DIAGNOSTIC_DELAY_MS)
     c.timers[0].fn()
     assert.equal(warn.mock.callCount(), 1)
     assert.match(String(warn.mock.calls[0].arguments[0]), /dsh-remove-deepseek-logo/)

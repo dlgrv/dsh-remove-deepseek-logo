@@ -5,6 +5,7 @@ window.__ModuleLoader__.load({ id: 'dsh-remove-deepseek-logo', factory: (require
 
   var inject = ['slots']
   var MARKER = 'data-dsh-remove-deepseek-logo'
+  var DIAGNOSTIC_DELAY_MS = 3000
 
   function apply(ctx) {
     if (document.querySelector('style[' + MARKER + ']')) return
@@ -22,7 +23,7 @@ window.__ModuleLoader__.load({ id: 'dsh-remove-deepseek-logo', factory: (require
     window.setTimeout(function () {
       if (document.querySelector('[class*="logoRow"], [class*="localBuildBrand"], [class$="_fish"]')) return
       console.warn('[dsh-remove-deepseek-logo] no branding elements found, the DSH UI may have changed')
-    }, 3000)
+    }, DIAGNOSTIC_DELAY_MS)
   }
 
   exports.apply = apply
