@@ -1,8 +1,11 @@
 {
   "name": "dsh-remove-deepseek-logo",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "DeepSeek Harness plugin: removes the logo, brand name, version string, and the conversation hero fish from the sidebar",
   "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "type": "module",
   "main": "lib/index.js",
   "keywords": [
@@ -43,6 +46,7 @@
     "cordis.patch.yml",
     "README.md",
     "LICENSE",
+    "CHANGELOG.md",
     "docs/preview.png"
   ],
   "scripts": {

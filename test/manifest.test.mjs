@@ -15,7 +15,7 @@ test('package exposes the client bundle and the bundle patch', () => {
 })
 
 test('every shipped file exists', () => {
-  for (const f of ['lib/index.js', 'client/client.js', 'cordis.patch.yml', 'README.md', 'LICENSE']) {
+  for (const f of ['lib/index.js', 'client/client.js', 'cordis.patch.yml', 'README.md', 'LICENSE', 'CHANGELOG.md']) {
     assert.ok(existsSync(join(root, f)), f + ' missing')
   }
 })
