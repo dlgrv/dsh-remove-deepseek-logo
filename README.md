@@ -1,6 +1,6 @@
 # dsh-remove-deepseek-logo
 
-[![npm](https://img.shields.io/npm/v/dsh-remove-deepseek-logo)](https://www.npmjs.com/package/dsh-remove-deepseek-logo) [![test](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml)
+[![tests](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml/badge.svg)](https://github.com/dlgrv/dsh-remove-deepseek-logo/actions/workflows/test.yml) [![npm version](https://img.shields.io/npm/v/dsh-remove-deepseek-logo)](https://www.npmjs.com/package/dsh-remove-deepseek-logo) [![stars](https://img.shields.io/github/stars/dlgrv/dsh-remove-deepseek-logo)](https://github.com/dlgrv/dsh-remove-deepseek-logo/stargazers) [![license: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![DSH 0.2.x](https://img.shields.io/badge/DSH-0.2.x-blue)](#compatibility)
 
 ![before and after](docs/preview.png)
 
