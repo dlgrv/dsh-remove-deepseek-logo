@@ -4,10 +4,12 @@ window.__ModuleLoader__.load({ id: 'dsh-remove-deepseek-logo', factory: (require
   Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' })
 
   var inject = ['slots']
+  var MARKER = 'data-dsh-remove-deepseek-logo'
 
   function apply(ctx) {
+    if (document.querySelector('style[' + MARKER + ']')) return
     var style = document.createElement('style')
-    style.setAttribute('data-dsh-remove-deepseek-logo', '')
+    style.setAttribute(MARKER, '')
     style.textContent = [
       '[class*="localBuildBrand"], [class*="localBuildTitle"], [class*="copyVersion"],',
       '[class*="buildVersion"], [class*="fallbackBrandName"] { display: none !important; }',
@@ -17,6 +19,10 @@ window.__ModuleLoader__.load({ id: 'dsh-remove-deepseek-logo', factory: (require
       '  padding: 0 !important; margin: 0 !important; overflow: hidden !important; border: 0 !important; }',
     ].join('\n')
     ;(document.head || document.documentElement).appendChild(style)
+    window.setTimeout(function () {
+      if (document.querySelector('[class*="logoRow"], [class*="localBuildBrand"], [class$="_fish"]')) return
+      console.warn('[dsh-remove-deepseek-logo] no branding elements found, the DSH UI may have changed')
+    }, 3000)
   }
 
   exports.apply = apply
